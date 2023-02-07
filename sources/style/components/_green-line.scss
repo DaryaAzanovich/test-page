@@ -1,0 +1,11 @@
+.green-line {
+  position: absolute;
+
+  height: $card-line-height;
+  left: 0%;
+  right: 0%;
+  top: 0px;
+
+  background: $green-color;
+  border-radius: $border-radius $border-radius 0px 0px;
+}

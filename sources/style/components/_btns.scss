@@ -1,0 +1,134 @@
+.card-details-btn,
+.green-card-details-btn {
+  height: 44px;
+  width: 222px;
+
+  align-self: center;
+
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 16px;
+
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.green-card-details-btn {
+  background: $white-color;
+  color: $green-color;
+
+  transition: 0.3s ease-in-out all;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.green-card-chosen {
+  background: rgba(255, 255, 255, 0.25);
+  color: $white-color;
+}
+
+.more-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  margin-top: 46px;
+  margin-bottom: 59px;
+
+  order: 100;
+
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  & img {
+    width: 16px;
+    height: 16px;
+
+    margin-left: 12px;
+
+    transition: transform 1s;
+  }
+
+  &:hover {
+    & img {
+      transform: rotate(-360deg);
+    }
+  }
+}
+
+.circle-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+
+  width: 30px;
+  height: 30px;
+
+  border-radius: 50%;
+  background: $white-color;
+
+  opacity: 0.7;
+  transition: 0.3s ease-in-out opacity;
+
+  cursor: pointer;
+  z-index: 2;
+}
+
+.circle-btn.green-one {
+  display: none;
+  left: 20px;
+
+  background: $green-color;
+}
+
+
+.before,
+.after {
+  content: '';
+  position: absolute;
+  top: 15px;
+
+  width: 15px;
+  height: 1px;
+
+  background-color: $green-color;
+  border-radius: 0;
+
+  transition: 0.3s ease-out;
+  z-index: 0;
+}
+
+.green-one .before,
+.green-one .after {
+  background-color: $white-color;
+}
+
+.before {
+  left: 7.5px;
+}
+
+.after {
+  right: 7.5px;
+  transform: rotate(-90deg);
+}
+.circle-btn-clicked {
+  opacity: 1;
+}
+
+.circle-btn-clicked .before {
+  transform: rotate(45deg);
+  transition: 0.3s ease-in-out all;
+}
+
+.circle-btn-clicked .after {
+  transform: rotate(-45deg);
+  transition: 0.3s ease-in all;
+}

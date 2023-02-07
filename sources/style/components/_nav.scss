@@ -1,0 +1,198 @@
+.nav {
+  position: relative;
+  width: 286px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 35px 15px 30px 15px;
+  margin-left: 0 !important;
+  min-width: 286px;
+
+  background: $white-color;
+
+  &-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    margin-left: 5px;
+
+    & svg {
+      margin-right: 13px;
+    }
+
+    &-text {
+      font-size: 13px;
+      line-height: 20px;
+
+      font-style: normal;
+      font-weight: 400;
+
+      color: $green-color;
+      text-transform: uppercase;
+    }
+  }
+
+  &-dropdown {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &-titles {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    margin: 0 13px;
+    width: 90%;
+
+    &__item {
+      display: flex;
+      flex-direction: column;
+
+      width: 100%;
+      margin-bottom: 12px;
+
+      cursor: pointer;
+
+      &:not(:first-child) {
+        margin-top: 12px;
+      }
+    }
+  }
+
+  &-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.nav-subtitles {
+  &-list {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    margin-top: 10px;
+
+    transition: display 0.5s;
+  }
+
+  &__item {
+    padding: 12px;
+    width: 100%;
+
+    font-size: 14px;
+    line-height: 22px;
+
+    border-radius: 3px;
+
+    cursor: pointer;
+
+    &:hover {
+      background: #f2f2f2;
+    }
+  }
+}
+
+// *************** MOB ***************
+.nav-header-text__mob {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-grow: 3;
+
+  margin-right: 18px;
+
+  color: $dark-color;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  & .chevron {
+    color: $dark-color;
+  }
+}
+
+.dropdown-opened {
+  color: $green-color;
+
+  & .chevron {
+    transform: rotate(90deg);
+    color: $green-color;
+  }
+}
+
+// *************** btns ***************
+.white-btn {
+  align-self: center;
+
+  height: 44px;
+  width: 222px;
+
+  color: $green-color;
+  background-color: #fff;
+
+  text-transform: uppercase;
+
+  border-radius: 3px;
+  border: 1px solid $green-color;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+
+  cursor: pointer;
+
+  &:hover {
+    background: rgb(15%, 59%, 4%, 0.15);
+  }
+}
+
+// ******************************
+.chevron {
+  transition: transform 0.5s;
+}
+
+.selected-title {
+  & .chevron,
+  & .nav-title {
+    color: $green-color;
+  }
+
+  & .chevron {
+    transform: rotate(90deg);
+  }
+}
+
+.selected-subt {
+  color: $green-color;
+
+  background: rgb(15%, 59%, 4%, 0.15) !important;
+}
+
+.line,
+.line-bottom {
+  width: 100%;
+  border-top: 1px solid #ececec;
+}
+
+.line {
+  margin: 20px 0;
+}
+
+.line-bottom {
+  margin-bottom: 20px;
+}
+
+.display {
+  display: flex !important;
+}

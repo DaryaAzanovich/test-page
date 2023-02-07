@@ -1,0 +1,148 @@
+.card,
+.green-card {
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+
+  width: 282px;
+  height: 405px;
+  min-width: 220px;
+
+  padding: 30px;
+
+  cursor: pointer;
+}
+
+.card {
+  background: $white-color;
+
+  &-logo {
+    align-self: flex-end;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin-bottom: 30px;
+  }
+
+  &-label {
+    margin-bottom: 10px;
+
+    font-size: 13px;
+    line-height: 20px;
+
+    color: $green-color;
+    text-transform: uppercase;
+  }
+
+  &-header {
+    margin: 0;
+    padding: 0;
+
+    font-size: 20px;
+    line-height: 30px;
+    flex-grow: 4;
+  }
+
+  &-details-btn {
+    color: $white-color;
+    background-color: $green-color;
+
+    &:hover {
+      background-color: $green-color-darker;
+    }
+  }
+
+  &-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    flex-grow: 1;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 8px;
+
+    &__img {
+      margin-right: 15px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+}
+
+.green-card {
+  color: $white-color !important;
+  background: $green-color;
+
+  box-shadow: $shadow-green;
+
+  &-title,
+  &-subtitle,
+  &-text,
+  &-big-text {
+    color: $white-color;
+  }
+
+  &-subtitle,
+  &-text {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  &-title,
+  &-subtitle {
+    margin-bottom: 20px;
+  }
+
+  &-title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+  }
+
+  &-subtitle {
+    display: flex;
+    flex-direction: column;
+
+    font-weight: bolder;
+  }
+
+  &-text {
+    font-weight: 100;
+  }
+
+  &-big-text {
+    margin: 10px 0;
+
+    font-size: 32px;
+    line-height: 44px;
+  }
+}
+
+// ***************** MOB *****************
+.card-text__mob,
+.card-cost__mob {
+  display: none;
+}
+
+.card-text__mob {
+  flex-grow: 2;
+  margin-top: 6px;
+}
+
+.card-cost__mob {
+  margin-bottom: 14px;
+  font-weight: bold;
+}

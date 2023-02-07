@@ -1,0 +1,66 @@
+@import './config/vars';
+@import './config/tags';
+@import './components/btns';
+@import './components/nav';
+@import './components/green-line';
+@import './components/card';
+@import './config/media';
+
+.wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin: 60px auto;
+  padding: 0 116px;
+  max-width: 1440px;
+  max-height: 1088px;
+}
+
+.header {
+  align-self: flex-start;
+
+  margin-bottom: 20px;
+
+  font-family: 'Playfair Display', serif;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 46px;
+
+  color: #3e3e3e;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+  width: 100%;
+}
+
+.cards-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.nav,
+.card,
+.green-card {
+  margin: 10px;
+
+  border-radius: $border-radius;
+}
+
+.nav,
+.card {
+  box-shadow: $cards-shadow;
+}
+
+.card-item__img,
+.nav-header img {
+  width: 18px;
+  height: 18px;
+}
